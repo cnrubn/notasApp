@@ -1,0 +1,76 @@
+.contenedor {
+    min-height: 90vh;
+}
+
+
+.cuerpoNota.negro {
+    border: 2px solid rgba(0, 0, 0, 0.92);
+}
+
+.cuerpoNota.azul {
+    border: 2px solid rgba(0, 130, 186, 0.92);
+}
+
+.cuerpoNota.verde {
+    border: 2px solid rgba(0, 181, 124, 0.92);
+}
+
+.cuerpoNota.amarillo {
+    border: 2px solid rgba(178, 181, 2, 0.909);
+}
+
+
+
+.cuerpoNota {
+    background-color: #fff;
+    width: 300px;
+    /* height: 800px; */
+    margin: 10px;
+    border-radius: 15px;
+    padding: 15px;
+    padding-bottom: 5px;
+    border: 1px solid #000;
+    font-size: 25px;
+}
+
+.tit {
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.texto {
+    padding: 10px 0;
+    line-height: 30px;
+    font-weight: 200;
+    overflow: hidden;
+    /* white-space: nowrap; */
+    /* text-overflow: ""; */
+}
+
+.fecha {
+    font-size: 20px;
+    padding-top: 3px;
+}
+
+.info {
+    font-size: 22px;
+}
+
+.info .icono {
+    margin: 0 5px;
+    color: rgb(113, 113, 113);
+    cursor: pointer;
+}
+
+.info .icono.editar:hover {
+    color: rgb(48, 183, 24);
+}
+
+.info .icono.eliminar:hover {
+    color: rgb(183, 24, 24);
+}
+
+

@@ -1,0 +1,76 @@
+<div class="fondo  "
+>  
+
+
+
+    <div class="marcoFondo d-flex justify-content-center align-items-end"
+         [ngClass]="{'notaActiva': notaActiva, 'negro': colores === 'negro', 'azul': colores === 'azul','verde': colores === 'verde','amarillo': colores === 'amarillo'}">
+ 
+        <form (ngSubmit)="guardar()" 
+              [formGroup]="miFormulario" class="panelEntrada"
+              [ngClass]="{'notaActiva': notaActiva, 'negro': colores === 'negro', 'azul': colores === 'azul','verde': colores === 'verde','amarillo': colores === 'amarillo'}">
+            <div
+>
+                <!--  -->
+                <input class="tit form-control"
+                       formControlName="tit"
+                       placeholder="Título"
+                       (ngSubmit)="guardar()">
+                <textarea class="texto flex-grow-1"
+                          formControlName="textoNota"
+                          placeholder="Texto..."
+                          maxlength="250">
+                </textarea>
+                <div class="info d-flex flex-row">
+                    <div class="color negro flex-grow-1 d-flex align-items-end mb-2"
+                         (click)="cambiarColor('negro')">
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+                    <div class="color azul flex-grow-1 d-flex align-items-end mb-2"
+                         (click)="cambiarColor('azul')">
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+                    <div class="color verde flex-grow-1 d-flex align-items-end mb-2"
+                         (click)="cambiarColor('verde')">
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+                    <div class="color amarillo flex-grow-1 d-flex align-items-end mb-2"
+                         (click)="cambiarColor('amarillo')">
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+                    <button class="icono guardar"
+                            type="submit"
+                            [disabled]="miFormulario.invalid"
+                            >
+                        guardar
+                    </button>
+                </div>
+                <!--  -->
+            </div>
+        </form>
+    </div>
+
+
+    <!-- <pre class="json">Value: {{ miFormulario.value | json }}</pre> -->
+
+
+
+</div>
+
+
+
+<div class="contenedorBoton d-flex justify-content-center align-items-end">
+    <div class="botonMedia"
+         (click)="activarNota()"
+         [ngClass]="{'notaActiva': notaActiva}">
+            <i class="fa-solid fa-circle-xmark"></i>
+    </div>
+</div>
+
+
+
+
+
+
+
+

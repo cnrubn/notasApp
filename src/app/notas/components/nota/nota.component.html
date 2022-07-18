@@ -1,0 +1,35 @@
+<div class="contenedor">
+    <div class="col d-flex flex-wrap justify-content-evenly">
+        
+    <div class="cuerpoNota d-flex flex-column"
+         *ngFor="let nota of cadenaDENotas, let i = index"
+         [ngClass]="{ 'negro': nota.color === 'negro', 'azul': nota.color === 'azul','verde': nota.color === 'verde','amarillo': nota.color === 'amarillo'}">
+
+        <div class="tit">
+            {{ nota.tit }}
+        </div>
+        <div class="texto flex-grow-1">
+            {{ nota.texto }}
+        </div>
+
+        <div class="info d-flex flex-row align-items-center">
+            <div class="fecha flex-grow-1 ">
+                {{ nota.fecha | date: 'dd MMM, y' }}
+            </div>
+            <!-- <div class="icono editar"
+                 >
+                editar
+            </div> -->
+            <div class="icono eliminar"
+                 (click)="destruir( i )">
+                eliminar
+            </div>
+        </div>
+
+    </div>
+    </div>
+</div>
+
+
+
+

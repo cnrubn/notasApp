@@ -1,0 +1,207 @@
+/* FONDO */
+.fondo {
+    /* background-color: rgba(0, 0, 0, 0.92); */
+    /* height: 100vh; */
+    /* transition: all 0.5s ease; */
+    /* z-index: -50; */
+    
+}
+
+.marcoFondo.negro {
+    /* background-color: rgba(0, 0, 0, 0.92); */
+}
+
+.marcoFondo.azul {
+    background-color: rgba(0, 130, 186, 0.92);
+}
+
+.marcoFondo.verde {
+    background-color: rgba(0, 181, 124, 0.92);
+}
+
+.marcoFondo.amarillo {
+    background-color: rgba(178, 181, 2, 0.909);
+}
+
+.marcoFondo {
+    background-color: rgba(0, 0, 0, 0.92);
+    /* background-color: red; */
+    width: 100%;
+    height: 100vh;
+    z-index: 40;
+    transition: all 0.5s ease;
+    position: fixed;
+
+    /* z-index: -50; */
+}
+
+/* PANEL DE ENTRADA */
+.panelEntrada {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #000;
+    width: 300px;
+    margin: 5px;
+    border-radius: 15px;
+    padding: 15px;
+    padding-bottom: 5px;
+    border: 1px solid #000;
+    font-size: 25px;
+    position: absolute;
+    bottom: 150px;
+
+}
+
+/* PANEL DE ENTRADA COLOR */
+.panelEntrada.negro {
+    border: 1px solid #000;
+}
+
+.panelEntrada.azul {
+    border: 1px solid rgb(0, 179, 255);
+}
+
+.panelEntrada.verde {
+    border: 1px solid rgb(0, 255, 174);
+}
+
+.panelEntrada.amarillo {
+    border: 1px solid rgb(238, 242, 1);
+}
+
+.panelEntrada .tit {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.panelEntrada .texto {
+    padding: 10px 0;
+    line-height: 30px;
+    border: none;
+    height: 325px;
+    resize: none;
+    width: 100%;
+}
+
+.panelEntrada .info .icono {
+    margin: 0 5px;
+    color: rgb(113, 113, 113);
+    cursor: pointer;
+}
+
+.panelEntrada .info .icono.guardar {
+    background-color: #fff;
+    border: none;
+}
+
+.panelEntrada .info .icono.guardar:hover {
+    color: rgb(9, 141, 0);
+}
+
+/* PUNTOS DE COLORES */
+.panelEntrada .color.negro  i{
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.panelEntrada .color.azul  i{
+    color: rgb(0, 179, 255);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.panelEntrada .color.verde  i{
+    color: rgb(0, 255, 174);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.panelEntrada .color.amarillo  i{
+    color: rgb(238, 242, 1);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* BOTÓN */
+.botonMedia {
+    font-size: 50px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    z-index: 250;
+    position: fixed;
+    transition: all 0.5s ease;
+    transform: rotate(.5deg);
+    top: 85vh;
+    color: red;
+    text-shadow: 0px 1px 2px rgb(0, 0, 0, .8);
+}
+
+
+/* ANIMACIÓN */
+
+.marcoFondo.notaActiva {
+    z-index: -50;
+    background-color: #fff;
+    transition: all 0.5s ease;
+}
+
+.botonMedia.notaActiva {
+    transition: all 0.5s ease;
+    transform: rotate(-45deg);
+    color: #A146ED;
+    text-shadow: 0px 1px 2px rgb(0, 0, 0, .8);
+
+}
+
+
+/*  */
+/* .json {
+    color: #fff;
+    margin-bottom: 500px;
+} */
+
+
+/* Adaptación dispositivos móviles */
+
+@media screen and (max-width: 815px) {
+
+    .botonMedia {
+        top: 80vh;
+    }
+
+    .panelEntrada {
+
+        position: absolute;
+        bottom: 20%;
+    
+    }
+
+    
+}
+
+@media screen and (max-height: 580px) {
+
+    .panelEntrada {
+        /* height: 20px; */
+        top: 2vh;
+        bottom: auto;
+    
+    }
+
+    .panelEntrada .texto {
+        /* padding: 10px 0; */
+        line-height: 25px;
+        /* border: none; */
+        height: 100px;
+        /* resize: none; */
+        /* width: 100%; */
+    }
+    
+}
+
+
