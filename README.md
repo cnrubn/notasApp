@@ -1,27 +1,14 @@
-# NotasApp
+## To Do - Notas Perfectas
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
+## https://notes-perfect.netlify.app/
 
-## Development server
+### Proyecto para la toma de notas.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### · Permite tomar notas y clasificarlas en hasta cuatro grupos con el uso de los distintos colores seleccionables.
+### · Adaptado a dispositivos móviles.
 
-## Code scaffolding
+![Captura de pantalla 2022-07-18 a las 13 54 47](https://user-images.githubusercontent.com/75250742/179507299-9a2339e5-5b44-4616-9c89-4e104101dd63.png)
+![Captura de pantalla 2022-07-18 a las 13 54 58](https://user-images.githubusercontent.com/75250742/179507318-982ee194-c361-4f09-82f8-d37f30529337.png)
+![Captura de pantalla 2022-07-18 a las 13 56 34](https://user-images.githubusercontent.com/75250742/179507332-55a8fd1b-7b63-432c-8b74-a492b977cfe3.png)
+![Captura de pantalla 2022-07-18 a las 13 56 41](https://user-images.githubusercontent.com/75250742/179507349-578e8cae-bbca-4160-aebb-b5acccd78409.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
